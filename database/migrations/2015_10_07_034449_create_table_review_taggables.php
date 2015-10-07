@@ -17,6 +17,7 @@ class CreateTableReviewTaggables extends Migration
             $table->integer('review_taggables_id');
             $table->string('review_taggables_type');
             $table->integer('review');
+            $table->text('comment');
         });
     }
 

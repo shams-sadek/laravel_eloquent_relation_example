@@ -8,6 +8,6 @@ class Doctor extends Model
 {
     public function reviews()
     {
-        return $this->morphToMany('App\User', 'review_taggables');
+        return $this->morphToMany('App\User', 'review_taggables')->withPivot('review', 'comment');
     }
 }

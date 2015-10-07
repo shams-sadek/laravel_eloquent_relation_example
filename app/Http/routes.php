@@ -57,5 +57,14 @@ Route::get('/review', function(){
 
     return $doctors->reviews;
 
+    $institutes = App\Institute::find(1);
+
+//    return $institutes->reviews;
+
+    $user = App\User::find(1);
+
+//    return $user->doctors;
+    return $user->institutes;
+
    return 'Review';
 });

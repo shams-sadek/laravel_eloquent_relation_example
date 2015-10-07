@@ -40,11 +40,11 @@ class User extends Model implements AuthenticatableContract,
 
     public function doctors()
     {
-        return $this->morphedByMany('App\Doctor', 'review_taggable');
+        return $this->morphedByMany('App\Doctor', 'review_taggables');
     }
 
     public function institutes()
     {
-        return $this->morphedByMany('App\Institute', 'review_taggable');
+        return $this->morphedByMany('App\Institute', 'review_taggables');
     }
 }

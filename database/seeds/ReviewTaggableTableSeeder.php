@@ -15,22 +15,25 @@ class ReviewTaggableTableSeeder extends Seeder
         DB::table('review_taggables')->insert([
             [
                 'user_id'                       => 1,
-                'review_taggables_id'            => 1,
-                'review_taggables_type'          => 'App\Doctor',
+                'review_taggables_id'           => 1,
+                'review_taggables_type'         => 'App\Doctor',
                 'review'                        => 4,
+                'comment'                       => 'Hello World',
             ],
             [
                 'user_id'                       => 1,
-                'review_taggables_id'            => 1,
-                'review_taggables_type'          => 'App\Institute',
+                'review_taggables_id'           => 1,
+                'review_taggables_type'         => 'App\Institute',
                 'review'                        => 3,
+                'comment'                       => 'Hello World',
             ],
 
             [
                 'user_id'                       => 2,
                 'review_taggables_id'            => 1,
                 'review_taggables_type'          => 'App\Institute',
-                'review'                        => 5,
+                'review'                        => 2,
+                'comment'                       => 'Hello Sadik',
             ],
 
         ]);
